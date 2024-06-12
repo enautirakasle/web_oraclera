@@ -58,7 +58,7 @@ public class DBF {
 	                props.setProperty("password", "oracle");
 	              
 	                //creating connection to Oracle database 
-	              
+	                Class.forName("oracle.jdbc.driver.OracleDriver");
 	                konexioa = DriverManager.getConnection(url,props);
 	                statement = konexioa.createStatement();
 
